@@ -3,17 +3,17 @@
 namespace NamaKota\HomeBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class DefaultController extends Controller
 {
+    /**
+     * @Route("/hello/")
+     * @Template()
+     */
     public function indexAction()
     {
-        return $this->render('NamaKotaHomeBundle:Default:index.html.twig');
+        return array();
     }
-
-    public function helloAction()
-	{
-	    return new Response('Hello world!');
-	}
 }
