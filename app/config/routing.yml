@@ -7,8 +7,8 @@ nama_kota_kota:
     type:     annotation
 
 nama_kota_home:
-    resource: "@NamaKotaHomeBundle/Resources/config/routing.yml"
-    prefix:   /
+    resource: "@NamaKotaHomeBundle/Controller/"
+    type:     annotation
 
 app:
     resource: "@AppBundle/Controller/"
