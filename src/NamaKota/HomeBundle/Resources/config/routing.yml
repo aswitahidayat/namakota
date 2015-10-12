@@ -1,8 +1,0 @@
-nama_kota_home_homepage:
-    path:     /
-    defaults: { _controller: NamaKotaHomeBundle:Default:index }
-
-hello:
-    path:     /hello
-    defaults: { _controller: NamaKotaHomeBundle:Default:hello }
-
