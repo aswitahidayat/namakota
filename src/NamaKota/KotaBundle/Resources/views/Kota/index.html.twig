@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Kota list</h1>
+        <ul>
+        <li>
+            <a href="{{ path('kota_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+
+    <div class=row>
+        <div class="col-md-3">Kota id</div>
+        <div class="col-md-3">Nama Kota</div>
+        <div class="col-md-3">Provinsi</div>
+        <div class="col-md-3">Action</div>
+    </div>
+    <div class=row>
+        {% for entity in entities %}
+        <div class="col-md-3"><a href="{{ path('kota_show', { 'id': entity.id }) }}">{{ entity.id }}</a></div>
+        <div class="col-md-3">{{ entity.namaKota }}</div>
+        <div class="col-md-3">{{ entity.provinsi }}</div>
+        <div class="col-md-3">
+            <a href="{{ path('kota_show', { 'id': entity.id }) }}">show</a> |
+            <a href="{{ path('kota_edit', { 'id': entity.id }) }}">edit</a>
+        </div>
+                {% endfor %}
+    </div>
+     
+
+    {% endblock %}

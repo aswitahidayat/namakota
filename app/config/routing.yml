@@ -1,0 +1,15 @@
+nama_provinsi:
+    resource: "@NamaKotaProvinsiBundle/Controller"
+    type:     annotation
+
+nama_kota_kota:
+    resource: "@NamaKotaKotaBundle/Controller"
+    type:     annotation
+
+nama_kota_home:
+    resource: "@NamaKotaHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,3 @@
+nama_kota_provinsi_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: NamaKotaProvinsiBundle:Default:index }

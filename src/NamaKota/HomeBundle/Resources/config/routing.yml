@@ -1,0 +1,3 @@
+nama_kota_home_homepage:
+    path:     /
+    defaults: { _controller: NamaKotaHomeBundle:Default:index }

@@ -1,0 +1,4 @@
+services:
+#    nama_kota_kota.example:
+#        class: NamaKota\KotaBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,7 @@
+nama_kota_kota_homepage:
+    path:     /kota
+    defaults: { _controller: NamaKotaKotaBundle:Kota:index }
+
+kota_new:
+    path:     /kota_new
+    defaults: { _controller: NamaKotaKotaBundle:Kota:new }
